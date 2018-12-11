@@ -22,6 +22,18 @@ public class Task {
         this.owner = owner;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Task{");

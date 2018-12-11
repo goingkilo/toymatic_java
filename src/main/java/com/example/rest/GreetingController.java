@@ -1,4 +1,4 @@
-package com.example;
+package com.example.rest;
 
 import com.example.redis.Student;
 import com.example.redis.StudentRepository;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
-//@ComponentScan("com.example.redis")
 public class GreetingController {
 
 
@@ -30,8 +29,6 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
     }
-
-
 
 
 }
