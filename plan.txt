@@ -30,3 +30,6 @@ misc
 
 FE
 |_angularjs front end
+
+microservices
+|_ zuul, hystrix
