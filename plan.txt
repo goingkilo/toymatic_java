@@ -1,0 +1,32 @@
+
+Dec 11 2018
+
+A microservice chassis contains !
+The idea is that the following are pieces of machinery that form applications. Once we accumulate a box of lego 
+bricks of various app-machine-parts, we should be able to snap together a laundry list of all possible
+applications that one has dreamt of.
+
+Spring rest, jpa, redis, quartz, hystrix, mq/rabbitmq
+|__ forms,validating forms, uploading files,     
+|__ transactions
+
+Scale
+|_HAproxy
+|_nginx
+|_varnish
+
+persistence
+|_redis, postgres, activemq/rabbitmq, 
+
+Distributed systems
+|_cassandra, kafka, spark, storm(?), elasticsearch, zookeeper, oozie/tez
+
+cool
+|_websockets
+|_ dashboards
+
+misc
+|_neo4j -rest apis
+
+FE
+|_angularjs front end
