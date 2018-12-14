@@ -10,7 +10,7 @@ public interface TaskRepository extends CrudRepository<Task, Long> {
 
     @Transactional
     List<Task> findByDescription(String description);
-    
+
     List<Task> findByOwner(String owner);
 
 }

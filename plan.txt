@@ -6,6 +6,8 @@ The idea is that the following are pieces of machinery that form applications. O
 bricks of various app-machine-parts, we should be able to snap together a laundry list of all possible
 applications that one has dreamt of.
 
+** why not do some of the things without spring
+
 Spring rest, jpa, redis, quartz, hystrix, mq/rabbitmq
 |__ forms,validating forms, uploading files,     
 |__ transactions

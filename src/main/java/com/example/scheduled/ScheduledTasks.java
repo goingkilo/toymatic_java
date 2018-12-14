@@ -23,7 +23,6 @@ public class ScheduledTasks {
     @Scheduled(fixedRate = 25000)
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(new Date()));
-
         sender.sendMessage( "topic1", "JackBauer");
     }
 }
