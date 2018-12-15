@@ -8,6 +8,11 @@ applications that one has dreamt of.
 
 ** why not do some of the things without spring
 
+* reactive image service
+|_ uploads
+
+connected by zuul
+
 Spring rest, jpa, redis, quartz, hystrix, mq/rabbitmq
 |__ forms,validating forms, uploading files,     
 |__ transactions
@@ -20,8 +25,17 @@ Scale
 persistence
 |_redis, postgres, activemq/rabbitmq, 
 
-Distributed systems
-|_cassandra, kafka, spark, storm(?), elasticsearch, zookeeper, oozie/tez
+clusters
+|_ redis, mysql ,postgres?
+
+Distributed 
+|_cassandra, kafka, zookeeper, oozie/tez
+|_Big data computation
+    |_ Spark
+|_ real time event Processing
+    |_ Storm
+|_ search
+    |_ elasticsearch
 
 cool
 |_websockets
