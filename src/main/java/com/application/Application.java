@@ -1,4 +1,4 @@
-package com.example;
+package com.application;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,15 +6,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-//@EnableScheduling
-//@EnableJms
 public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
 
-        log.info("Welcome to the new millenium !!");
+        log.info("Things aren't what they seem, nor are they otherwise");
         SpringApplication.run(Application.class, args);
     }
 

@@ -7,32 +7,32 @@
 
 <style>
 
-    body {
-        font-family: newspaper;
-    }
-    h1  {
-        font-family: typewriter;
-    }
-    form {
-        display: inline-block;
-    }
-    .form-group {
-        text-align: center;
-        padding-bottom: 25px;
+     body {
+         font-family: newspaper;
+     }
+     h1  {
+         font-family: typewriter;
+     }
+     form {
+         display: inline-block;
+     }
+     .form-group {
+         text-align: center;
+         padding-bottom: 25px;
 
-    }
-    li {
-        border-bottom: solid 1px black;
-    }
+     }
+     li {
+         border-bottom: solid 1px black;
+     }
 
-    li:hover {
-        background-color: #B6CDE5;
-    }
-    #my_date {
-        float:right;
-    }
+     li:hover {
+         background-color: #B6CDE5;
+     }
+     #my_date {
+         float:right;
+     }
 
-</style>
+ </style>
 <script>
     function logout() {
         document.location = '/auth/logout';
@@ -62,24 +62,24 @@
                 <form action="/order" method="POST" class="form-vertical">
                     <div class="form-group">
                         <div class="panel panel-default"></div>
-                        <label for="name">Name </label>
-                        <input type="text" name="name" class="form-control" id="name"><br>
+                            <label for="name">Name </label>
+                                <input type="text" name="name" class="form-control" id="name"><br>
 
-                        <label for="phone">Phone * </label>
-                        <input type="text" id="phone" class="form-control" name="phone"><br>
+                            <label for="phone">Phone * </label>
+                                <input type="text" id="phone" class="form-control" name="phone"><br>
 
-                        <label for="address">Delivery Address  </label>
-                        <input label="Name" type="text" id="address" class="form-control input-lg" name="address"><br>
+                            <label for="address">Delivery Address  </label>
+                                <input label="Name" type="text" id="address" class="form-control input-lg" name="address"><br>
 
-                        <div class="form-group">
-                            <label for="payment">Select list:</label>
-                            <select class="form-control" id="payment">
-                                <option name="account">Account transfer</option>
-                                <option name="paytm">Paytm</option>
-                                <option name="bhim">BHIM/UPI</option>
-                            </select>
-                        </div>
-                        <!--</div>-->
+                                <div class="form-group">
+                                    <label for="payment">Select list:</label>
+                                    <select class="form-control" id="payment">
+                                        <option name="account">Account transfer</option>
+                                        <option name="paytm">Paytm</option>
+                                        <option name="bhim">BHIM/UPI</option>
+                                    </select>
+                                </div>
+                            <!--</div>-->
                     </div>
                     <div class="form-group">
                         <table class="table" >
