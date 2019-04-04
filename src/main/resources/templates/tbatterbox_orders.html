@@ -1,0 +1,87 @@
+<script type="text/javascript" src="/js/jquery.js"></script>
+<link rel="stylesheet" href="/css/bootstrap-theme.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<!--<link rel="stylesheet" href="/css/fonts.css">-->
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+
+<style>
+
+
+     form {
+         display: inline-block;
+     }
+
+     li {
+         border-bottom: solid 1px black;
+     }
+
+     li:hover {
+         background-color: #B6CDE5;
+     }
+
+
+ </style>
+
+<body>
+
+<section>
+    <div class="container">
+
+        <!-- nav bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Freshest batter delivered right home !!</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- row 1 --->
+        <div class="row" style="margin-top:4px; text-align: center;">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <table>
+                    <thead>
+                        <th> Orders </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:if="${orders.empty}">
+                        <td colspan="2"> No orders available </td>
+                    </tr>
+                    <tr th:each="order : ${orders}" style="border:solid 1px black">
+                        <td>
+                            <span th:text="${order.name}"> Name</span>
+                            <br>
+                            <span th:text="${order.address}"> Address </span>
+                            <br>
+                            <span th:text="${order.cellNumber}"> Phone  </span>
+                            <br>
+                            <span th:text="${order.paymentOption}"> Payment mode : </span>
+
+                            <ul th:if="${order.orders.empty}">
+                                <li> no order items </li>
+                            </ul>
+                        <ul th:each="order1:${order.orders}">
+                            <li>
+                                <span th:text="${order1.key}"> Item</span> : <span th:text="${order1.value}"> Value</span>
+                            </li>
+                        </ul>
+                        </td>
+
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>

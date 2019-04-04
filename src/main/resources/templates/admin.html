@@ -1,0 +1,104 @@
+<script type="text/javascript" src="/js/jquery.js"></script>
+<link rel="stylesheet" href="/css/bootstrap-theme.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+
+<style>
+
+     body {
+         font-family: newspaper;
+     }
+     h1  {
+         font-family: typewriter;
+     }
+     form {
+         display: inline-block;
+     }
+     .form-group {
+         text-align: center;
+         padding-bottom: 25px;
+
+     }
+     li {
+         border-bottom: solid 1px black;
+     }
+
+     li:hover {
+         background-color: #B6CDE5;
+     }
+     #my_date {
+         float:right;
+     }
+
+ </style>
+<script>
+    function logout() {
+        document.location = '/auth/logout';
+    }
+</script>
+
+<body>
+
+<section>
+    <div class="container">
+
+        <!-- nav bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Freshest batter delivered right home !!</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row" style="margin-top:4px; text-align: center;">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="caret" th:text="${curdate}"></span></button>
+                    <ul class="dropdown-menu" th:each="date : ${dates}">
+                        <li><a href="#" th:text="${date}"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:4px; text-align: center;">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <table>
+                    <thead>
+                    <tr>
+                        <th> Order </th>
+                        <th> Order </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr th:if="${orders.empty}">-->
+                        <!--<td colspan="2"> No orders available </td>-->
+                    <!--</tr>-->
+                    <!--<tr th:each="order : ${orders}">-->
+                        <!--<td><span th:text="${order.cellNumber}"> cell</span></td>-->
+                        <!--<td><span th:text="${order.address}"> address</span></td>-->
+                    <!--</tr>-->
+                    <tr>
+                        <td>1</td><td>1</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>

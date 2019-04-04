@@ -73,10 +73,10 @@
 
                                 <div class="form-group">
                                     <label for="payment">Select list:</label>
-                                    <select class="form-control" id="payment">
-                                        <option name="account">Account transfer</option>
-                                        <option name="paytm">Paytm</option>
-                                        <option name="bhim">BHIM/UPI</option>
+                                    <select class="form-control" name="payment" id="payment">
+                                        <option value="ACCOUNT_TRANSFER">Account transfer</option>
+                                        <option value="PAYTM">Paytm</option>
+                                        <option value="UPI">BHIM/UPI</option>
                                     </select>
                                 </div>
                             <!--</div>-->
@@ -84,19 +84,19 @@
                     <div class="form-group">
                         <table class="table" >
                             <tr>
-                                <td>Idli </td><td><input type="number" name="idli"><br></td>
+                                <td>Idli </td><td><input type="number" name="idli" value="0"><br></td>
                             </tr>
                             <tr>
-                                <td>Vada </td><td><input type="number" name="vada"><br></td>
+                                <td>Vada </td><td><input type="number" name="vada" value="0"><br></td>
                             </tr>
                             <tr>
-                                <td>Ragi </td><td><input type="number" name="ragi"><br></td>
+                                <td>Ragi </td><td><input type="number" name="ragi" value="0"><br></td>
                             </tr>
                             <tr>
-                                <td>Millet </td><td><input type="number" name="millet"><br></td>
+                                <td>Millet </td><td><input type="number" name="millet" value="0"><br></td>
                             </tr>
                             <tr>
-                                <td>Appam</td><td><input type="number" name="appam"><br></td>
+                                <td>Appam</td><td><input type="number" name="appam" value="0"><br></td>
                             </tr>
                         </table>
                         <button class="btn btn-default" type="submit">Submit Order</button>
