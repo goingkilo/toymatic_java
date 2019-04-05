@@ -6,3 +6,5 @@ Mar 22 : 2019 : First log
     - Remove ALL spring boot items except the Web package. Then add others as per plan directly. No Spring wrappers
 
 
+apr 4
+    deployed to heroku after idling and featuritis. no new features are added. no admin page nothing
