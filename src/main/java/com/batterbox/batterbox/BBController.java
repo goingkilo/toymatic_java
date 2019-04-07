@@ -19,7 +19,7 @@ public class BBController {
     @Autowired
     BBRepository repository;
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     public ModelAndView index() {
         String date = nextDeliveryDate();
         if( date == null){
