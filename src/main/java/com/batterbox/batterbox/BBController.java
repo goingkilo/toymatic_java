@@ -19,7 +19,7 @@ public class BBController {
     @Autowired
     BBRepository repository;
 
-    @RequestMapping("/index")
+    @RequestMapping("/")
     public ModelAndView index() {
         String date = nextDeliveryDate();
         if( date == null){
@@ -97,8 +97,16 @@ public class BBController {
             throw new Exception("this did not happen");
         }
 
-        return getOrders();
+        return showMyOrder(order);
 
+    }
+
+    private ModelAndView showMyOrder(Order order) {
+        ModelAndView mv = new ModelAndView("tbatterbox_myorder");
+        List<Order> o = new ArrayList<>();
+        o.add(order);
+        mv.addObject("orders", o);
+        return mv;
     }
 
 
