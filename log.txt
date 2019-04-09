@@ -14,5 +14,7 @@ apr 9
     cleaned up orders. next - to autopopulate user name and address if phone number is filled
         user ep: given a word, walk down the trie character by character, and where it stops,
                 get all the names starting with the path so far
-        users reside in redis today,
-        user upload utility (add,overwrite,fail-on-conflict)
+        users reside in redis
+        --user upload utility (add,overwrite,fail-on-conflict)-- no
+        upload users into redis
+        write an ep which takes a prefix, then searches for startsWith in 'select users from'
