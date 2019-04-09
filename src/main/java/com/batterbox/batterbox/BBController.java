@@ -48,7 +48,7 @@ public class BBController {
                 .map(Order::fromJSONString)
                 .collect(Collectors.toList());
 
-        ModelAndView mv = new ModelAndView("tbatterbox_orders1");
+        ModelAndView mv = new ModelAndView("tbatterbox_orders");
         mv.addObject("orders",o);
         return mv;
     }

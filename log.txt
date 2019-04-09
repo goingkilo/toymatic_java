@@ -8,3 +8,11 @@ Mar 22 : 2019 : First log
 
 apr 4
     deployed to heroku after idling and featuritis. no new features are added. no admin page nothing
+
+
+apr 9
+    cleaned up orders. next - to autopopulate user name and address if phone number is filled
+        user ep: given a word, walk down the trie character by character, and where it stops,
+                get all the names starting with the path so far
+        users reside in redis today,
+        user upload utility (add,overwrite,fail-on-conflict)
