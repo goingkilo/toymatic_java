@@ -139,6 +139,11 @@ public class BBController {
         repository.setNextDeliveryDate(date);
         return getOrders();
     }
+    @RequestMapping(value = "/delivery_date", method = RequestMethod.GET)
+    public ModelAndView deliveryDate(){
+        ModelAndView mv = new ModelAndView("tbatterbox_date");
+        return mv;
+    }
 
 
 }
