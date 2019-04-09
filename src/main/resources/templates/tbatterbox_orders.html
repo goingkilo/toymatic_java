@@ -51,7 +51,7 @@
                     <tr th:if="${orders.empty}">
                         <td colspan="2"> No orders available </td>
                     </tr>
-                    <tr th:each="order : ${orders}" style="border:solid 1px black">
+                    <tr th:each="order : ${orders}" >
                         <td>
                             <span th:text="${order.name}"> Name</span>
                             <br>
@@ -64,11 +64,11 @@
                             <ul th:if="${order.orders.empty}">
                                 <li> no order items </li>
                             </ul>
-                        <ul th:each="order1:${order.orders}">
-                            <li>
-                                <span th:text="${order1.key}"> Item</span> : <span th:text="${order1.value}"> Value</span>
-                            </li>
-                        </ul>
+                            <ul th:each="order1:${order.orders}">
+                                <li>
+                                    <span th:text="${order1.key}"> Item</span> : <span th:text="${order1.value}"> Value</span>
+                                </li>
+                            </ul>
                         </td>
 
 
