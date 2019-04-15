@@ -1,6 +1,7 @@
 package com.batterbox.batterbox;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -53,6 +54,18 @@ public class BBController {
         return mv;
     }
 
+    @RequestMapping(value = "/json", method = RequestMethod.GET)
+    public String getOrdersJSON(){
+
+        List<String> orders = repository.getAllOrders();
+        List<Order> o = orders
+                .stream()
+                .map(Order::fromJSONString)
+                .collect(Collectors.toList());
+
+        return new JSONArray(o).toString(4);
+    }
+
     @RequestMapping(value = "/order", method = RequestMethod.POST)
     public ModelAndView takeBatterboxOrder(
             @RequestParam(value="name") String  name,
@@ -88,7 +101,7 @@ public class BBController {
             order.addProduct(Constants.APPAM,appam);
         }
 
-        System.out.println( order.toString());
+//        System.out.println( order.toString());
 
         try {
             repository.save(order);
