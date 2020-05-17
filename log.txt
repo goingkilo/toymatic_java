@@ -22,3 +22,5 @@ apr 9
 
 May 2020
 	yeah, it's been a while. I've been making 2.5 per month doing shit
+
+    ttc - took me 3 sessions of 30 min to convert ttc txt to a json map,then read it from classpath/resource then present it.

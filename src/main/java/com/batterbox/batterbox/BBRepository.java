@@ -11,8 +11,6 @@ import java.util.stream.IntStream;
 
 public class BBRepository {
 
-
-
     @Autowired
     Jedis jedis;
 

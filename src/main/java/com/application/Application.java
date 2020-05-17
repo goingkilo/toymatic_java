@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.batterbox.batterbox")
+@ComponentScan(basePackages = {"com.batterbox.batterbox","com.tao"})
 public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
