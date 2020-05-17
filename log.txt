@@ -18,3 +18,7 @@ apr 9
         --user upload utility (add,overwrite,fail-on-conflict)-- no
         upload users into redis
         write an ep which takes a prefix, then searches for startsWith in 'select users from'
+
+
+May 2020
+	yeah, it's been a while. I've been making 2.5 per month doing shit
